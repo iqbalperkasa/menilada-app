@@ -1,0 +1,32 @@
+{
+  "name": "menilada-app",
+  "version": "1.0.0",
+  "description": "aplikasi hitung order menilada",
+  "license": "UNLICENSED",
+  "scripts": {
+    "clean": "rm -rf dist/ && rm -rf .cache/",
+    "dev": "yarn clean && parcel src/index.pug",
+    "build": "parcel build src/index.pug",
+    "release": "yarn clean && yarn build"
+  },
+  "alias": {
+    "api": "./src/javascripts/api",
+    "components": "./src/components",
+    "pages": "./src/pages",
+    "public": "./public",
+    "src": "./src"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
+    "stylus": "^0.54.8",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "pages": "^0.0.16",
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-router": "^3.4.3"
+  }
+}
