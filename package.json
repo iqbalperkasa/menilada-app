@@ -16,15 +16,19 @@
     "public": "./public",
     "src": "./src"
   },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.5.0",
     "pug": "^3.0.0",
     "stylus": "^0.54.8",
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
-    "pages": "^0.0.16",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4",
     "vue-router": "^3.4.3"
